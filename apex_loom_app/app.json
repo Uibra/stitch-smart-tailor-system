@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Apex Loom",
+    "slug": "apex-loom",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#F5FBF7"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F5FBF7"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

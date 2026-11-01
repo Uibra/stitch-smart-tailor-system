@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#414846", "on-tertiary-container": "#999e9b", "on-primary-fixed": "#00201a", "background": "#f5fbf7", "secondary-fixed-dim": "#e5c284", "secondary-fixed": "#ffdea7", "on-error-container": "#93000a", "on-secondary-container": "#775d29", "outline-variant": "#c0c8c4", "error-container": "#ffdad6", "tertiary": "#1b211e", "on-primary-container": "#7da599", "error": "#ba1a1a", "inverse-surface": "#2c3230", "primary": "#00251d", "primary-container": "#123b32", "on-primary-fixed-variant": "#264e44", "on-surface": "#171d1b", "on-primary": "#ffffff", "tertiary-container": "#303633", "inverse-on-surface": "#ecf2ef", "tertiary-fixed": "#dfe4e0", "outline": "#717975", "on-secondary-fixed": "#271900", "surface-container": "#e9efec", "surface-bright": "#f5fbf7", "surface-dim": "#d5dbd8", "on-secondary": "#ffffff", "surface-container-low": "#eff5f1", "surface-container-highest": "#dee4e0", "surface-tint": "#3f665b", "primary-fixed": "#c1ecde", "on-tertiary-fixed-variant": "#424845", "surface-container-high": "#e4e9e6", "secondary-container": "#fdd898", "surface": "#f5fbf7", "inverse-primary": "#a5cfc2", "on-tertiary-fixed": "#171d1b", "primary-fixed-dim": "#a5cfc2", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "secondary": "#755a26", "tertiary-fixed-dim": "#c2c8c4", "on-secondary-fixed-variant": "#5b4311", "on-error": "#ffffff", "on-background": "#171d1b", "surface-variant": "#dee4e0" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-md": "0.75rem", "gutter": "1rem", "space-lg": "1rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "margin": "1rem" }, fontFamily: { "body-lg": ["Manrope"], "headline-sm": ["Epilogue"], "label-md": ["Manrope"], "body-md": ["Manrope"], "headline-md": ["Epilogue"], "headline-lg": ["Epilogue"], "numeric-metric": ["Manrope"], "body-sm": ["Manrope"], "label-sm": ["Manrope"], "display-lg": ["Epilogue"], "label-lg": ["Manrope"] }, fontSize: { "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }], "numeric-metric": ["20px", { lineHeight: "24px", letterSpacing: "-0.02em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "display-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #f5fbf7; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="Apex Loom Official Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1Vo0qxoDtgBYNE-a2SvltLuwRvQiL1D76n2aV7nGISHB0qQyKsa8hmYC3vq57Bszosjf9K92rCVLeRa5X1LaFsUuX_fuV68ujsC-wUgM1_r9-XaRFBO8MSvoL5uD2oERSoydxJ-1m1WH3mI5ZJq3FQdN0I2dpyKgGh02VSFNuU-kXT7_62jZd97fQJk7Z55plrebifcoORXZaboIU79mKuBcuVEhRkMTm2L9tme2A"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-primary leading-none truncate">APEX LOOM</span><span class="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span><span class="hidden sm:inline-block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Home</span></div><span class="font-label-sm text-label-sm text-outline truncate">First Measure to Finished Wear</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary active:scale-95 transition-all relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><button aria-label="Account switcher" class="w-11 h-11 flex items-center justify-center rounded-full p-0.5 hover:ring-1 hover:ring-secondary/40 active:scale-95 transition-all"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFd3zrGrw6c5ucEC5ikowAXtQX9OtT8v__y0GJwT-oj66awVQuRQd5xaz9d3odXu2Eygwtlx15CKTALHeRUoeBHwPaTnJMim945qKAscjQdoX7jDqh0J2Qn6o4JRqpJr1f6kKjHRL1WJCdf8Y4GdpLP_cYgpzvDlXGvD6BZ1OcZOoIM4jf8bfrE0LpqiahaUrpGcdbCKKDWz9a2d9dWvR9A3XnSUWLUYMuzvskgw"/></button></div></div></header><main class="flex-1 w-full bg-background pt-16 pb-20"><div class="flex flex-col w-full pb-8">
+<!-- GREETING BAR -->
+<section class="px-margin pt-4 pb-2">
+<div class="flex items-baseline justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Lagos Atelier Network</p>
+<h1 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">Good morning, Tariq</h1>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed/50">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-secondary-container font-semibold">2 Active Fittings</span>
+</div>
+</div>
+</section>
+<!-- SECTION 2: WELCOME & HERO EDITORIAL CARD -->
+<section class="px-margin my-3">
+<div class="rounded-xl p-5 bg-surface-container-low shadow-sm flex flex-col gap-4 relative overflow-hidden">
+<div class="flex flex-col gap-2 relative z-10 max-w-[92%]">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Haute Bespoke</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SS25 Collection</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary leading-tight font-semibold">
+          Your Next Outfit Starts Here.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Discover handcrafted styles, sculpt your vision with AI, and commission verified West African master tailors.
+        </p>
+</div>
+<!-- Hero Artwork Preview -->
+<div class="relative w-full h-72 rounded-lg overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover object-top" data-alt="Editorial full-length portrait of a distinguished West African gentleman wearing a lavish emerald green Agbada with geometric Thread Gold hand-embroidery down the chest, paired with a matching embroidered Fila cap, holding a traditional beaded chieftaincy staff, warm studio ambient lighting reflecting off lustrous textured silk brocade." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCJN2GI_22E4tNmCuUid9XH72Ke6vTA77NCdJ3Ma7Nckj_dDZ1mCQPSuwqOeg2wKVY8N27ID7IKw56AWOp9eS2pMBoNv57u0lem8vGTboMuyZuE_FYrgBMbBa2-A2HmepKZYbjP82XroUwPqRtnu-oI9eI1dq4E2YTLgrnl5gBz7alud06rEHiO6nARd6TG7zRDzpbHuMC2g369PpoW1naqndtLiwylVR_3J4ctw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-surface-bright">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-fixed block">Bespoke Agbada Masterpiece</span>
+<span class="font-headline-sm text-headline-sm font-semibold">Emerald Silk Brocade</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/80 text-surface-bright font-label-sm text-label-sm backdrop-blur-md">
+            Hand-Stitched
+          </span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col sm:flex-row gap-2.5 pt-1 relative z-10">
+<button class="w-full h-[50px] px-5 rounded-lg bg-primary-container text-surface-bright font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">edit_square</span>
+<span>Create New Outfit</span>
+</button>
+<button class="w-full h-[50px] px-5 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">auto_awesome_motion</span>
+<span>Explore Styles</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION 3: AI OUTFIT CREATION (STUDIO DISPATCH) -->
+<section class="px-margin my-3">
+<div class="rounded-xl p-5 bg-surface-container-lowest shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/60 flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">magic_button</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Imagine It. Design It.</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Apex Loom Generative Atelier Engine</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold tracking-wide">AI BETA</span>
+</div>
+<div class="grid grid-cols-1 gap-2.5">
+<!-- Action 1: Describe a Style -->
+<button class="w-full min-h-[58px] p-3.5 rounded-lg bg-surface-container-low hover:bg-surface-container active:scale-[0.99] transition-all flex items-center justify-between text-left group" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">draw</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-primary font-semibold group-hover:text-primary-container transition-colors">Describe a Style</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">"Deep indigo Senator with geometric gold chest embroidery"</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-0.5 transition-transform shrink-0">arrow_forward</span>
+</button>
+<!-- Action 2: Upload Reference -->
+<button class="w-full min-h-[58px] p-3.5 rounded-lg bg-surface-container-low hover:bg-surface-container active:scale-[0.99] transition-all flex items-center justify-between text-left group" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">add_photo_alternate</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-primary font-semibold group-hover:text-primary-container transition-colors">Upload a Reference</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Moodboards, Pinterest clips, swatch photos, or pencil sketches</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-0.5 transition-transform shrink-0">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION 4: TRY IT ON YOUR AVATAR (APEX LOOM MIRROR) -->
+<section class="px-margin my-3">
+<div class="rounded-xl p-5 bg-surface-container-lowest shadow-sm flex flex-col gap-4">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Apex Loom Mirror</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">See Your Style Before You Sew</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Preview draped drape simulation on your 3D digital twin.</p>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">view_in_ar</span>
+</div>
+</div>
+<!-- Avatar Preview Canvas -->
+<div class="relative w-full h-80 rounded-xl overflow-hidden bg-surface-container-high flex items-center justify-center">
+<img class="w-full h-full object-cover object-center" data-alt="Photorealistic 3D full-body mannequin mannequin in a bright architectural minimalist atelier lounge, showcasing a tailored luxury charcoal-grey bespoke trouser suit with subtle brass buttons, studio rim lighting, neutral concrete floor, architectural curves in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjQLVQeljN9OUdbCeXe_AJFd5N1NqlCXjp8PjuLk1ixvKMf0iO3rjH0SUDQO35ig5MSy-qeUfzcdTXswCo4DXEL5LX0-1S-XU2MfXR8lYwxaM4iQY08xBm2f_gdT_WGetjGJZF033JPjX-o_HwIfof2UMSUtjDbum5_VB7IsI_W56ls6vtFn9d8_3ajFYbyvcAwwzgmY-aZtsXZkWaMbVPJ9P4S3WdDDtyKiLRZQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<!-- Floating Measurements Pin -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">straighten</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Avatar: Tariq #01 (184cm · Slim)</span>
+</div>
+<!-- Disclaimer Chip -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 px-2 py-1 rounded-md bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface">
+<span class="material-symbols-outlined text-[13px] text-secondary-fixed">info</span>
+<span class="font-label-sm text-label-sm">Visual preview · Not physical fit guarantee</span>
+</div>
+</div>
+</div>
+<button class="w-full h-[50px] px-5 rounded-lg bg-primary-container text-surface-bright font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">accessibility_new</span>
+<span>Open Virtual Fitting Room</span>
+</button>
+</div>
+</section>
+<!-- SECTION 5: BROWSE CLOTHING CATEGORIES (HORIZONTAL SCROLLER) -->
+<section class="my-3">
+<div class="px-margin flex items-center justify-between mb-3">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Couture Categories</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Curated traditional &amp; modern cuts</p>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-semibold hover:underline" href="#">View All</a>
+</div>
+<!-- Scroller -->
+<div class="flex items-center gap-2.5 px-margin overflow-x-auto no-scrollbar pb-1">
+<!-- Category 1 -->
+<button class="flex flex-col items-center gap-1.5 p-2.5 rounded-xl bg-surface-container-lowest shadow-sm min-w-[78px] shrink-0 active:scale-95 transition-transform group" type="button">
+<div class="w-12 h-12 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center text-[22px]">
+<span class="material-symbols-outlined">styler</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Agbada</span>
+</button>
+<!-- Category 2 -->
+<button class="flex flex-col items-center gap-1.5 p-2.5 rounded-xl bg-surface-container-lowest shadow-sm min-w-[78px] shrink-0 active:scale-95 transition-transform group" type="button">
+<div class="w-12 h-12 rounded-full bg-surface-container text-primary flex items-center justify-center text-[22px]">
+<span class="material-symbols-outlined">dry_cleaning</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Kaftan</span>
+</button>
+<!-- Category 3 -->
+<button class="flex flex-col items-center gap-1.5 p-2.5 rounded-xl bg-surface-container-lowest shadow-sm min-w-[78px] shrink-0 active:scale-95 transition-transform group" type="button">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-[22px]">
+<span class="material-symbols-outlined">apparel</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Senator</span>
+</button>
+<!-- Category 4 -->
+<button class="flex flex-col items-center gap-1.5 p-2.5 rounded-xl bg-surface-container-lowest shadow-sm min-w-[78px] shrink-0 active:scale-95 transition-transform group" type="button">
+<div class="w-12 h-12 rounded-full bg-surface-container text-primary flex items-center justify-center text-[22px]">
+<span class="material-symbols-outlined">iron</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Suits</span>
+</button>
+<!-- Category 5 -->
+<button class="flex flex-col items-center gap-1.5 p-2.5 rounded-xl bg-surface-container-lowest shadow-sm min-w-[78px] shrink-0 active:scale-95 transition-transform group" type="button">
+<div class="w-12 h-12 rounded-full bg-surface-container text-primary flex items-center justify-center text-[22px]">
+<span class="material-symbols-outlined">woman</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Gowns</span>
+</button>
+<!-- Category 6 -->
+<button class="flex flex-col items-center gap-1.5 p-2.5 rounded-xl bg-surface-container-lowest shadow-sm min-w-[78px] shrink-0 active:scale-95 transition-transform group" type="button">
+<div class="w-12 h-12 rounded-full bg-surface-container text-primary flex items-center justify-center text-[22px]">
+<span class="material-symbols-outlined">badge</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Uniforms</span>
+</button>
+<!-- Category 7 -->
+<button class="flex flex-col items-center gap-1.5 p-2.5 rounded-xl bg-surface-container-lowest shadow-sm min-w-[78px] shrink-0 active:scale-95 transition-transform group" type="button">
+<div class="w-12 h-12 rounded-full bg-surface-container text-primary flex items-center justify-center text-[22px]">
+<span class="material-symbols-outlined">shopping_basket</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Ready-to-Wear</span>
+</button>
+</div>
+</section>
+<!-- SECTION 6: RECOMMENDED DESIGNS -->
+<section class="px-margin my-3">
+<div class="flex items-center justify-between mb-3">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Recommended Silhouettes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Trained on your body metrics and Lagos occasions</p>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-semibold hover:underline" href="#">Explore More</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+<!-- Style Card 1 -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col group">
+<div class="relative w-full h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial lookbook photograph of a handsome African model wearing a rich royal emerald grand Agbada robe with intricate Thread Gold filigree embroidery around the neck and sleeve hems, positioned against an ivory architectural wall with warm palm shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgMDfxTVQ29cgTfGD67FMov1cNz0zAtfQcre-1Sv-xzbNx1KxryjmQShoiLTQ1EKGsgdrc4i1EnFTBm3FCE0qODBYmRNk35EUTDCsnbObmJ8i2CNU9ecsuWSkKUS_XaSQxUVeaCB55uJye1yaS3SbW59Rxvd4gsCOb7UxjD6AXYNetNEn9DQQPMMnOzsrvZd96G_1M1qmmGNetquCrEp7R3ejcEjwrfN2UazTNUQ"/>
+<button aria-label="Bookmark Royal Emerald Agbada" class="w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary flex items-center justify-center absolute top-2.5 right-2.5 active:scale-90 transition-transform shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+<div class="absolute bottom-2.5 left-2.5 flex items-center gap-1">
+<span class="px-2 py-0.5 rounded-md bg-primary-container/85 text-surface-bright font-label-sm text-label-sm backdrop-blur-md">Ceremonial</span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Getzner Cotton</span>
+</div>
+</div>
+<div class="p-3.5 flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold truncate">Royal Emerald Agbada</h4>
+<span class="font-label-lg text-label-lg text-secondary font-bold">₦145,000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Three-piece masterpiece featuring architectural shoulder volume, tonal threadwork, and bespoke Fila.
+          </p>
+<button class="w-full h-11 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 mt-1 active:scale-[0.98] transition-all" type="button">
+<span>View Style Dossier</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Style Card 2 -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col group">
+<div class="relative w-full h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial men's fashion photo of an African gentleman wearing a sleek minimalist charcoal Senator set with asymmetric hidden zipper placket and mandarin collar, photographed in a high-end Lagos art gallery with warm stone textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC-83xGOGOUKmEgjg7tBqN0cJZz38zZ23T_KWpz5O-0YxMm-LA3xjHxiRV80wS4oH0rEadQTUW0-zgRSiJx2THolGFCIdJReSNmDexuwXw0870A9h2oGJgQdCPjE2cCUP9T5VT5YpwbBj8O-cmQrARM0tfaPwWak9P196PFdGSqnq-XcoE44MPH38UQNvJSOFD5i8S51JnEn7jbHpl6SBKg49MJZ_InXc4z2hdig"/>
+<button aria-label="Bookmark Minimalist Charcoal Senator" class="w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary flex items-center justify-center absolute top-2.5 right-2.5 active:scale-90 transition-transform shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-2.5 left-2.5 flex items-center gap-1">
+<span class="px-2 py-0.5 rounded-md bg-primary-container/85 text-surface-bright font-label-sm text-label-sm backdrop-blur-md">Executive</span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Italian Cashmere-Wool</span>
+</div>
+</div>
+<div class="p-3.5 flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold truncate">Minimalist Charcoal Senator</h4>
+<span class="font-label-lg text-label-lg text-secondary font-bold">₦85,000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Streamlined two-piece tunic crafted with weighted Italian wool, concealed button placket, and crisp taper.
+          </p>
+<button class="w-full h-11 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 mt-1 active:scale-[0.98] transition-all" type="button">
+<span>View Style Dossier</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: FIND YOUR TAILOR (VERIFIED GUILD) -->
+<section class="px-margin my-3">
+<div class="flex items-center justify-between mb-3">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Master Tailors Near You</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Verified by Apex Loom Quality Guild</p>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-semibold hover:underline" href="#">Guild Directory</a>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Artisan Card 1 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of a master African tailor wearing round tortoiseshell glasses and measuring tape looped around neck, warm studio backdrop, confident craftsman expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBf8WUXPeMDdPHSMSZxjzbLlMbihtaoumjUxdSo6jFGFbnQxCfwvk41wje6GUG78CWLdbwTXf89TuvU1ZEVGwZJE8J6L677eBXsNy7MRL4PjfqRJHk2LX6UAdvTi2v7_hA1QONp_MhvIiTZnj7yDNG5UAt59Cfc2kgkpq_bOBIvGHpnuTCHQ9MqyHB0XLSB9svTjrb5P_pU2mTgkdBZcUWKohkTRwfTHLaWDtnXw"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Gidan Dinki Atelier</h4>
+<span class="material-symbols-outlined text-[16px] text-secondary" title="Verified Bespoke Guild">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Maitama, Abuja · Verified Bespoke</p>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-md shrink-0">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">4.9</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(128)</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">Speciality: Royal Agbada</span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">Turnaround: 7-10 Days</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Next fitting slot: <strong class="text-primary font-semibold">Tomorrow, 2:00 PM</strong></span>
+<button class="h-10 px-4 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-surface-container-high active:scale-95 transition-all" type="button">
+            View Profile
+          </button>
+</div>
+</div>
+<!-- Artisan Card 2 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of a female master couturière in Lekki Lagos arranging fine wool suiting patterns on a drafting table, soft daylight streaming through atelier windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy61dnF3e1ygcGztdFI2a70ISt9Sdb2AHE_pAJ-o2gnHjjuFddSyafDn21P8DpVm2qQZnzO-lBsdhOxO9M3xnLRnMu9vE2bxxDBeMlhAoqege1C1wkFrpZaQDd3-y8n91ggHOW8JVLKfh4yhLYTpuuzNm6mj_972JxORiQuyktDldWS-tpQXaUaNHh5iilsw4zSCS6oplA9UQJ69nDNFtIWnuPFZUjhVJOl9qy4A"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Savile &amp; Niger Craft</h4>
+<span class="material-symbols-outlined text-[16px] text-secondary" title="Master Tailor 15 yrs">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lekki Phase 1, Lagos · Master Tailor 15 yrs</p>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-md shrink-0">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">5.0</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(94)</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">Speciality: Modern Senator &amp; Tuxedos</span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">Hand Canvas Stitching</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Next fitting slot: <strong class="text-primary font-semibold">Thu, 11:30 AM</strong></span>
+<button class="h-10 px-4 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-surface-container-high active:scale-95 transition-all" type="button">
+            View Profile
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: CURRENT ORDER STATUS -->
+<section class="px-margin my-3">
+<div class="flex items-center justify-between mb-3">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Active Atelier Commission</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Track your bespoke garment milestone</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">
+        Stage 3 of 5
+      </span>
+</div>
+<!-- Active Order Dossier Card -->
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-3.5">
+<div class="flex items-start justify-between">
+<div class="flex gap-3">
+<div class="w-14 h-14 rounded-lg overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Detailed macro shot of deep midnight navy velvet fabric being meticulously trimmed along chalk pattern lines with gold heavy-duty tailor shears, wooden workbench background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqCUnxokpf35TJLbkYRzSPtjncfewP4BCLriE89IvnAqejoohbPkceV4SBk_6Hh_rnB2OMUlB_s40r4yu__eFM4ymXJZyxDdaUHZsu4TXs7mZQm1DRCyGSoLakT4aVgKZMH1qrcOuc8OpCdtEDFewOo1lLIF8tI6eEGGsbPNyvrIJMvWZRwqFtpioouP_MDrhI850UgmNuinxYJxgOabKPM0trWfX3ZM3iUWKsGQ"/>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Order #AL-2094</span>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Midnight Velvet Senator Tunic</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tailor: Master Haruna · Victoria Island Workshop</p>
+</div>
+</div>
+</div>
+<!-- Milestone Stage Progress -->
+<div class="p-3 rounded-lg bg-surface-container-lowest flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-primary font-semibold">Current: Pattern &amp; Cutting (Yanka Kaya)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">60% complete</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 60%;"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant font-body-sm pt-0.5">
+<span>First Fitting: Passed</span>
+<span>Delivery: <strong class="text-primary font-semibold">Friday, 18 Oct</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-0.5">
+<button class="w-full h-[48px] rounded-lg bg-primary-container text-surface-bright font-label-md text-label-md font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">timeline</span>
+<span>View Live Milestone Timeline</span>
+</button>
+<button aria-label="Message Tailor" class="w-[48px] h-[48px] rounded-lg bg-surface-container hover:bg-surface-container-high text-primary flex items-center justify-center shrink-0 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION 9: EXPLORE FABRICS & SERVICES -->
+<section class="px-margin my-3">
+<div class="flex items-center justify-between mb-3">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Fabrics &amp; Specialized Craft</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Source premium textiles &amp; artisanal embellishments</p>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-semibold hover:underline" href="#">All Services</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+<!-- Service 1: Fabric Vendors -->
+<a class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3 active:scale-[0.99] transition-transform" href="#">
+<div class="w-11 h-11 rounded-lg bg-secondary-fixed/60 text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">texture</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-semibold truncate">Authentic Fabric Houses</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Super Getzner, Italian Wool, Aso Oke</span>
+</div>
+</a>
+<!-- Service 2: Embroidery -->
+<a class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3 active:scale-[0.99] transition-transform" href="#">
+<div class="w-11 h-11 rounded-lg bg-primary-container text-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">auto_fix_high</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-semibold truncate">Embroidery Masters</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Zari thread, monogram, chain stitch</span>
+</div>
+</a>
+<!-- Service 3: Pattern Drafting -->
+<a class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3 active:scale-[0.99] transition-transform" href="#">
+<div class="w-11 h-11 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">square_foot</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-semibold truncate">Pattern Drafters</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Architectural grading &amp; bespoke slopers</span>
+</div>
+</a>
+</div>
+</section>
+<!-- SECTION 10: LEARNING & HELP (MEASUREMENT & AI ASSISTANT) -->
+<section class="px-margin my-3">
+<div class="rounded-xl p-4 bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">help_center</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Atelier Knowledge &amp; Help</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">24/7 Concierge</span>
+</div>
+<!-- Measurement Tutorial Link Card -->
+<a class="p-3 rounded-lg bg-surface-container-low hover:bg-surface-container active:scale-[0.99] transition-all flex items-center justify-between" href="#">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">straighten</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-semibold">Guided Tape Measurement Tutorial</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Interactive 6-step self-measurement guide with AR assist</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">play_circle</span>
+</a>
+<!-- AI Assistant Launch Bar -->
+<div class="p-2.5 rounded-lg bg-primary-container text-surface-bright flex items-center justify-between gap-3">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">smart_toy</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-secondary-fixed font-semibold">Ask Apex Loom Assistant</span>
+<span class="font-body-sm text-body-sm text-on-primary-container truncate">Ask about fabrics, styling etiquette, or order milestones</span>
+</div>
+</div>
+<button class="h-9 px-3 rounded-md bg-secondary text-primary font-label-sm text-label-sm font-semibold hover:bg-secondary-fixed transition-colors shrink-0" type="button">
+          Chat Now
+        </button>
+</div>
+</div>
+</section>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,37,29,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-xs flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors text-primary-container font-semibold" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm mt-0.5">Explore</span></a><div class="flex items-center justify-center min-w-[56px] h-12 -mt-5"><a aria-label="Create Commission" class="w-13 h-13 w-[52px] h-[52px] rounded-full bg-primary-container text-surface-bright flex items-center justify-center shadow-md ring-2 ring-secondary-fixed active:scale-95 transition-transform" data-path="create-commission" href="#"><span class="material-symbols-outlined text-[26px] text-secondary-fixed">add</span></a></div><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="font-label-sm text-label-sm mt-0.5">Orders</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>

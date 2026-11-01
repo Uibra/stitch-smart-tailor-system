@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#414846", "on-tertiary-container": "#999e9b", "on-primary-fixed": "#00201a", "background": "#f5fbf7", "secondary-fixed-dim": "#e5c284", "secondary-fixed": "#ffdea7", "on-error-container": "#93000a", "on-secondary-container": "#775d29", "outline-variant": "#c0c8c4", "error-container": "#ffdad6", "tertiary": "#1b211e", "on-primary-container": "#7da599", "error": "#ba1a1a", "inverse-surface": "#2c3230", "primary": "#00251d", "primary-container": "#123b32", "on-primary-fixed-variant": "#264e44", "on-surface": "#171d1b", "on-primary": "#ffffff", "tertiary-container": "#303633", "inverse-on-surface": "#ecf2ef", "tertiary-fixed": "#dfe4e0", "outline": "#717975", "on-secondary-fixed": "#271900", "surface-container": "#e9efec", "surface-bright": "#f5fbf7", "surface-dim": "#d5dbd8", "on-secondary": "#ffffff", "surface-container-low": "#eff5f1", "surface-container-highest": "#dee4e0", "surface-tint": "#3f665b", "primary-fixed": "#c1ecde", "on-tertiary-fixed-variant": "#424845", "surface-container-high": "#e4e9e6", "secondary-container": "#fdd898", "surface": "#f5fbf7", "inverse-primary": "#a5cfc2", "on-tertiary-fixed": "#171d1b", "primary-fixed-dim": "#a5cfc2", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "secondary": "#755a26", "tertiary-fixed-dim": "#c2c8c4", "on-secondary-fixed-variant": "#5b4311", "on-error": "#ffffff", "on-background": "#171d1b", "surface-variant": "#dee4e0" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-md": "0.75rem", "gutter": "1rem", "space-lg": "1rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "margin": "1rem" }, fontFamily: { "body-lg": ["Manrope"], "headline-sm": ["Epilogue"], "label-md": ["Manrope"], "body-md": ["Manrope"], "headline-md": ["Epilogue"], "headline-lg": ["Epilogue"], "numeric-metric": ["Manrope"], "body-sm": ["Manrope"], "label-sm": ["Manrope"], "display-lg": ["Epilogue"], "label-lg": ["Manrope"] }, fontSize: { "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }], "numeric-metric": ["20px", { lineHeight: "24px", letterSpacing: "-0.02em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "display-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #f5fbf7; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="Apex Loom Official Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1Vo0qxoDtgBYNE-a2SvltLuwRvQiL1D76n2aV7nGISHB0qQyKsa8hmYC3vq57Bszosjf9K92rCVLeRa5X1LaFsUuX_fuV68ujsC-wUgM1_r9-XaRFBO8MSvoL5uD2oERSoydxJ-1m1WH3mI5ZJq3FQdN0I2dpyKgGh02VSFNuU-kXT7_62jZd97fQJk7Z55plrebifcoORXZaboIU79mKuBcuVEhRkMTm2L9tme2A"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-primary leading-none truncate">APEX LOOM</span><span class="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span><span class="hidden sm:inline-block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Home</span></div><span class="font-label-sm text-label-sm text-outline truncate">First Measure to Finished Wear</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary active:scale-95 transition-all relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><button aria-label="Account switcher" class="w-11 h-11 flex items-center justify-center rounded-full p-0.5 hover:ring-1 hover:ring-secondary/40 active:scale-95 transition-all"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFd3zrGrw6c5ucEC5ikowAXtQX9OtT8v__y0GJwT-oj66awVQuRQd5xaz9d3odXu2Eygwtlx15CKTALHeRUoeBHwPaTnJMim945qKAscjQdoX7jDqh0J2Qn6o4JRqpJr1f6kKjHRL1WJCdf8Y4GdpLP_cYgpzvDlXGvD6BZ1OcZOoIM4jf8bfrE0LpqiahaUrpGcdbCKKDWz9a2d9dWvR9A3XnSUWLUYMuzvskgw"/></button></div></div></header><main class="flex-1 w-full bg-background pt-16 pb-20"><div class="flex flex-col w-full px-margin pb-10 space-y-space-xl">
+<!-- Interactive Customer State Switcher Bar -->
+<div class="w-full bg-surface-container rounded-full p-1 flex items-center justify-between shadow-sm">
+<button class="flex-1 py-2 px-3 rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 bg-surface-container-lowest text-primary shadow-sm" id="toggle-returning" onclick="setCustomerState('returning')">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Returning (Tariq)</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 text-on-surface-variant hover:text-primary" id="toggle-firsttime" onclick="setCustomerState('firsttime')">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span>First-Time Guest</span>
+</button>
+</div>
+<!-- Dynamic Personalized Greeting -->
+<div class="flex flex-col space-y-1">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Atelier Digital Salon</span>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight" id="greeting-title">Welcome back, Tariq</h1>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-container text-surface-bright flex items-center justify-center font-label-lg text-label-lg shadow-sm" id="greeting-avatar">
+        TA
+      </div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant" id="greeting-subtitle">What would you like to create today?</p>
+</div>
+<!-- Featured Atelier Hero Card -->
+<div class="w-full rounded-xl bg-surface-container-low p-5 shadow-sm relative overflow-hidden flex flex-col space-y-4">
+<div class="flex flex-col space-y-2 relative z-10">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed w-fit font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>Bespoke Commission</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary leading-tight">Your Next Outfit Starts Here.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[280px]">Discover styles, create a design, and find a verified Nigerian atelier you trust.</p>
+</div>
+<!-- Editorial Showcase Image Container -->
+<div class="w-full h-52 rounded-lg overflow-hidden relative shadow-sm">
+<img alt="Royal Emerald Agbada Atelier Creation" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida/AEtjO1UDY2Rk30JnWrDtH8TGrQTWLPesfAZvuC_rwUB9wRwNENrFEZDlbmB7cNMP9qrEP-6pn5xlZg_XrOFOrWXDKbKahGBXEvtMo7cTGF054Eyo3wvD-Etx_oB8oxNh3MwYttQDYg4dClgvGwvNwxZDo1KEjNCi5J0bhCf_6hW-FzVwmolAxl2cVdKQGEJ6uts5iE6bsRB74ErnP4tXX4e23Z7LofulJ2cpV4AP53Zw600"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-3">
+<div class="flex items-center gap-2 text-surface-bright">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">verified</span>
+<span class="font-label-sm text-label-sm tracking-wide">Master Hand-Loomed Emerald Agbada</span>
+</div>
+</div>
+</div>
+<!-- Dual Actions -->
+<div class="flex flex-col sm:flex-row gap-2.5 pt-1">
+<button class="w-full h-12 rounded-lg bg-primary-container text-surface-bright font-label-lg text-label-lg flex items-center justify-center gap-2 active:bg-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+<span>Create New Outfit</span>
+</button>
+<button class="w-full h-12 rounded-lg bg-surface-container-highest text-primary font-label-lg text-label-lg flex items-center justify-center gap-2 active:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+<span>Explore Styles</span>
+</button>
+</div>
+</div>
+<!-- Active Order Tracking / Empty State (Contextual) -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Active Commission</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container" id="order-status-pill">In Progress</span>
+</div>
+<!-- Returning State Card -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3.5" id="active-order-returning">
+<div class="flex items-start justify-between">
+<div class="flex gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[26px]">apparel</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">#AL-2094</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Victoria Island Workshop</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-primary">Midnight Velvet Senator Tunic</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Master Haruna</span>
+</div>
+</div>
+</div>
+<!-- Live Stage Progress Bar -->
+<div class="flex flex-col space-y-1.5 bg-surface-container-low p-3 rounded-lg">
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-sm text-label-sm font-semibold">Stage 3 of 5: Pattern &amp; Cutting (Yanka Kaya)</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">60%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full w-3/5"></div>
+</div>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Target Milestone</span>
+<span class="font-semibold text-primary">Fitting: Fri, 18 Oct</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md flex items-center justify-center gap-2 active:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">timeline</span>
+<span>Track Live Workshop &amp; Milestones</span>
+</button>
+</div>
+<!-- First Time Empty Order State Card -->
+<div class="hidden w-full rounded-xl bg-surface-container-lowest p-5 shadow-sm flex-col items-center text-center space-y-3" id="active-order-firsttime">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[26px]">receipt_long</span>
+</div>
+<div class="flex flex-col space-y-1">
+<h4 class="font-label-lg text-label-lg text-primary">Your next outfit will appear here</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[260px]">Once you commission an artisan, live workshop progress and fitting milestones will show here.</p>
+</div>
+<button class="w-full h-11 rounded-lg bg-primary-container text-surface-bright font-label-md text-label-md flex items-center justify-center gap-2 active:bg-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Commission Your First Outfit</span>
+</button>
+</div>
+</div>
+<!-- Design Creation Studio Section -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Apex Loom Studio</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Imagine It. Design It.</h3>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">AI Co-Creator</span>
+</div>
+<div class="grid grid-cols-1 gap-2.5">
+<!-- Option 1: Describe a Style -->
+<div class="w-full p-4 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between active:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-surface-container-low text-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">stylus</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary">Describe a Style</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Enter prompts, cut details &amp; silhouettes</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">chevron_right</span>
+</div>
+<!-- Option 2: Upload Reference -->
+<div class="w-full p-4 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between active:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">add_photo_alternate</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary">Upload a Reference</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Moodboards, sketches &amp; photographs</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Digital Avatar / Virtual Fitting Section -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Virtual Fitting Room</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">See Your Style Before You Sew</h3>
+</div>
+</div>
+<!-- Returning Customer Avatar State -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3" id="avatar-returning">
+<div class="relative w-full h-64 rounded-lg overflow-hidden bg-surface-container">
+<img alt="Virtual 3D Fitting Model" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1XEMIcygS3W--ZfaVlo8tZN6VaWfqAI8ASfd5c96s-l6guzbuQUIVjQyU3GUyHvyJl90NSdb2bq9ZzyVWavfIne5UgX56RhuMts94_0twPydM5KyexF2rols8oDQoNUQyramw6suTiDlyxZuINBIRa3FgqWfzoL34KxnSokiKSLK3a6G-0SYujCXFv9_3n8sntBMlDOEVoO93x0v4pCUxnT-5hDsmILYLmi0YKQ2zE"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary-container/90 backdrop-blur-md text-surface-bright flex items-center gap-1.5 shadow-sm font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">accessibility_new</span>
+<span>Avatar: Tariq #01 · Calibrated</span>
+</div>
+<div class="absolute bottom-2 left-2 right-2 p-2 rounded-md bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface text-[11px] leading-tight flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed shrink-0">info</span>
+<span>Visual simulation only · Does not guarantee physical garment drape.</span>
+</div>
+</div>
+<button class="w-full h-12 rounded-lg bg-primary-container text-surface-bright font-label-lg text-label-lg flex items-center justify-center gap-2 active:bg-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px]">view_in_ar</span>
+<span>Try Virtual Fitting (Apex Mirror)</span>
+</button>
+</div>
+<!-- First Time Customer Avatar Empty State -->
+<div class="hidden w-full rounded-xl bg-surface-container-lowest p-5 shadow-sm flex-col items-center text-center space-y-4" id="avatar-firsttime">
+<div class="w-20 h-20 rounded-full bg-surface-container-low flex items-center justify-center text-secondary relative">
+<span class="material-symbols-outlined text-[40px]">person_outline</span>
+<div class="absolute inset-0 rounded-full border-2 border-dashed border-outline-variant animate-spin-slow"></div>
+</div>
+<div class="flex flex-col space-y-1">
+<h4 class="font-headline-sm text-headline-sm text-primary">No Avatar Created Yet</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[280px]">Build your personalized 3D digital twin in 2 minutes using your verified tape measurements.</p>
+</div>
+<button class="w-full h-12 rounded-lg bg-primary-container text-surface-bright font-label-lg text-label-lg flex items-center justify-center gap-2 active:bg-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px]">straighten</span>
+<span>Create Your 3D Avatar</span>
+</button>
+</div>
+</div>
+<!-- Style Categories (Horizontal Micro-Scroller) -->
+<div class="flex flex-col space-y-3 -mx-margin">
+<div class="flex items-center justify-between px-margin">
+<h3 class="font-headline-sm text-headline-sm text-primary">Style Categories</h3>
+<a class="font-label-sm text-label-sm text-secondary font-semibold hover:underline" href="#">View All</a>
+</div>
+<div class="flex items-center gap-2.5 overflow-x-auto px-margin scrollbar-none pb-1">
+<div class="flex-shrink-0 flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-primary-container text-surface-bright shadow-sm cursor-pointer">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">dry_cleaning</span>
+<span class="font-label-md text-label-md">Agbada</span>
+</div>
+<div class="flex-shrink-0 flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm cursor-pointer hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">checkroom</span>
+<span class="font-label-md text-label-md">Kaftan</span>
+</div>
+<div class="flex-shrink-0 flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm cursor-pointer hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">styler</span>
+<span class="font-label-md text-label-md">Senator</span>
+</div>
+<div class="flex-shrink-0 flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm cursor-pointer hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">theater_comedy</span>
+<span class="font-label-md text-label-md">Suits</span>
+</div>
+<div class="flex-shrink-0 flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm cursor-pointer hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">woman</span>
+<span class="font-label-md text-label-md">Dresses</span>
+</div>
+<div class="flex-shrink-0 flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm cursor-pointer hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">child_care</span>
+<span class="font-label-md text-label-md">Children's Wear</span>
+</div>
+<div class="flex-shrink-0 flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm cursor-pointer hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">badge</span>
+<span class="font-label-md text-label-md">Uniforms</span>
+</div>
+<div class="flex-shrink-0 flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm cursor-pointer hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">shopping_bag</span>
+<span class="font-label-md text-label-md">Ready-to-Wear</span>
+</div>
+</div>
+</div>
+<!-- Recommended Designs (2-Column Mobile Grid) -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Recommended Designs</h3>
+<span class="font-label-sm text-label-sm text-outline">Bespoke Curation</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Design 1 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<div class="relative w-full h-44 bg-surface-container">
+<img alt="Royal Emerald Agbada Design" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida/AEtjO1UDY2Rk30JnWrDtH8TGrQTWLPesfAZvuC_rwUB9wRwNENrFEZDlbmB7cNMP9qrEP-6pn5xlZg_XrOFOrWXDKbKahGBXEvtMo7cTGF054Eyo3wvD-Etx_oB8oxNh3MwYttQDYg4dClgvGwvNwxZDo1KEjNCi5J0bhCf_6hW-FzVwmolAxl2cVdKQGEJ6uts5iE6bsRB74ErnP4tXX4e23Z7LofulJ2cpV4AP53Zw600"/>
+<button class="w-8 h-8 rounded-full bg-surface/80 backdrop-blur-md absolute top-2 right-2 flex items-center justify-center text-on-surface hover:text-secondary">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+<div class="p-3 flex flex-col space-y-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Ceremonial Agbada</span>
+<h4 class="font-label-lg text-label-lg text-primary truncate">Royal Emerald Agbada</h4>
+<span class="font-numeric-metric text-numeric-metric text-primary-container mt-0.5">₦145,000</span>
+</div>
+<button class="w-full h-9 rounded-md bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-surface-container transition-colors">
+            View Style
+          </button>
+</div>
+</div>
+<!-- Design 2 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<div class="relative w-full h-44 bg-surface-container">
+<img alt="Minimalist Charcoal Senator Design" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida/AEtjO1XEMIcygS3W--ZfaVlo8tZN6VaWfqAI8ASfd5c96s-l6guzbuQUIVjQyU3GUyHvyJl90NSdb2bq9ZzyVWavfIne5UgX56RhuMts94_0twPydM5KyexF2rols8oDQoNUQyramw6suTiDlyxZuINBIRa3FgqWfzoL34KxnSokiKSLK3a6G-0SYujCXFv9_3n8sntBMlDOEVoO93x0v4pCUxnT-5hDsmILYLmi0YKQ2zE"/>
+<button class="w-8 h-8 rounded-full bg-surface/80 backdrop-blur-md absolute top-2 right-2 flex items-center justify-center text-on-surface hover:text-secondary">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+<div class="p-3 flex flex-col space-y-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Executive Senator</span>
+<h4 class="font-label-lg text-label-lg text-primary truncate">Minimalist Charcoal Senator</h4>
+<span class="font-numeric-metric text-numeric-metric text-primary-container mt-0.5">₦85,000</span>
+</div>
+<button class="w-full h-9 rounded-md bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-surface-container transition-colors">
+            View Style
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Find a Tailor (Artisan Cards) -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Verified Nigerian Ateliers</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Find Your Tailor</h3>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-semibold hover:underline" href="#">Directory</a>
+</div>
+<!-- Tailor 1 -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between">
+<div class="flex gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-primary-container font-bold">
+            GD
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<h4 class="font-label-lg text-label-lg text-primary">Gidan Dinki Atelier</h4>
+<span class="material-symbols-outlined text-[16px] text-primary-container">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Maitama, Abuja</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Specialization: Royal Agbada &amp; Kaftan</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-0.5 rounded-full text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">star</span>
+<span class="font-bold">4.9</span>
+<span class="text-on-surface-variant">(128)</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Next fitting slot available</span>
+</span>
+<button class="h-9 px-4 rounded-md bg-primary-container text-surface-bright font-label-sm text-label-sm hover:bg-primary transition-colors">
+          View Profile
+        </button>
+</div>
+</div>
+<!-- Tailor 2 -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between">
+<div class="flex gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-secondary font-bold">
+            SN
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<h4 class="font-label-lg text-label-lg text-primary">Savile &amp; Niger Craft</h4>
+<span class="material-symbols-outlined text-[16px] text-primary-container">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lekki Phase 1, Lagos</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Specialization: Modern Senator &amp; Bespoke Suits</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-0.5 rounded-full text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">star</span>
+<span class="font-bold">5.0</span>
+<span class="text-on-surface-variant">(94)</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Open for appointments</span>
+</span>
+<button class="h-9 px-4 rounded-md bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-surface-container transition-colors">
+          View Profile
+        </button>
+</div>
+</div>
+</div>
+<!-- Industry & Craft Services -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Industry &amp; Craft Services</h3>
+<span class="font-label-sm text-label-sm text-outline">Supply Chain</span>
+</div>
+<div class="grid grid-cols-1 gap-2.5">
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">texture</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Authentic Fabric Houses</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Super Getzner, Italian Wool, Pure Aso Oke</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">draw</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Embroidery Masters</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Metallic Zari thread, precise chain stitch</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">content_cut</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Pattern &amp; Cutting Services</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Digital bespoke slopers &amp; manual grading</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Apex Loom AI Concierge Card -->
+<div class="w-full rounded-xl bg-surface-container-low p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+</div>
+<div class="flex flex-col space-y-1">
+<div class="flex items-center gap-1.5">
+<h4 class="font-label-lg text-label-lg text-primary">Apex Loom AI Concierge</h4>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-container">24/7 Live</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Need assistance choosing fabrics, styling an Agbada silhouette, or calibrating physical tape measurements?</p>
+</div>
+</div>
+<button class="w-full h-11 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat_bubble</span>
+<span>Ask Atelier Assistant</span>
+</button>
+</div>
+</div>
+<script>
+  function setCustomerState(state) {
+    const isReturning = state === 'returning';
+    
+    // Switch toggle button styles
+    const btnReturning = document.getElementById('toggle-returning');
+    const btnFirstTime = document.getElementById('toggle-firsttime');
+    
+    if (isReturning) {
+      btnReturning.className = "flex-1 py-2 px-3 rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 bg-surface-container-lowest text-primary shadow-sm";
+      btnReturning.querySelector('span:first-child').className = "w-2 h-2 rounded-full bg-primary-container";
+      
+      btnFirstTime.className = "flex-1 py-2 px-3 rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 text-on-surface-variant hover:text-primary";
+      btnFirstTime.querySelector('span:first-child').className = "w-2 h-2 rounded-full bg-outline-variant";
+    } else {
+      btnFirstTime.className = "flex-1 py-2 px-3 rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 bg-surface-container-lowest text-primary shadow-sm";
+      btnFirstTime.querySelector('span:first-child').className = "w-2 h-2 rounded-full bg-primary-container";
+      
+      btnReturning.className = "flex-1 py-2 px-3 rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 text-on-surface-variant hover:text-primary";
+      btnReturning.querySelector('span:first-child').className = "w-2 h-2 rounded-full bg-outline-variant";
+    }
+
+    // Toggle greeting
+    document.getElementById('greeting-title').textContent = isReturning ? 'Welcome back, Tariq' : 'Welcome to Apex Loom';
+    document.getElementById('greeting-avatar').style.display = isReturning ? 'flex' : 'none';
+
+    // Toggle active order view
+    const orderReturning = document.getElementById('active-order-returning');
+    const orderFirstTime = document.getElementById('active-order-firsttime');
+    const orderPill = document.getElementById('order-status-pill');
+
+    if (isReturning) {
+      orderReturning.classList.remove('hidden');
+      orderReturning.classList.add('flex');
+      orderFirstTime.classList.add('hidden');
+      orderFirstTime.classList.remove('flex');
+      orderPill.textContent = 'In Progress';
+      orderPill.className = 'font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container';
+    } else {
+      orderReturning.classList.add('hidden');
+      orderReturning.classList.remove('flex');
+      orderFirstTime.classList.remove('hidden');
+      orderFirstTime.classList.add('flex');
+      orderPill.textContent = 'No Active Orders';
+      orderPill.className = 'font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant';
+    }
+
+    // Toggle avatar view
+    const avatarReturning = document.getElementById('avatar-returning');
+    const avatarFirstTime = document.getElementById('avatar-firsttime');
+
+    if (isReturning) {
+      avatarReturning.classList.remove('hidden');
+      avatarReturning.classList.add('flex');
+      avatarFirstTime.classList.add('hidden');
+      avatarFirstTime.classList.remove('flex');
+    } else {
+      avatarReturning.classList.add('hidden');
+      avatarReturning.classList.remove('flex');
+      avatarFirstTime.classList.remove('hidden');
+      avatarFirstTime.classList.add('flex');
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,37,29,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm mt-0.5">Explore</span></a><div class="flex items-center justify-center min-w-[56px] h-12 -mt-5"><a aria-label="Create Commission" class="w-13 h-13 w-[52px] h-[52px] rounded-full bg-primary-container text-surface-bright flex items-center justify-center shadow-md ring-2 ring-secondary-fixed active:scale-95 transition-transform" data-path="create-commission" href="#"><span class="material-symbols-outlined text-[26px] text-secondary-fixed">add</span></a></div><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="font-label-sm text-label-sm mt-0.5">Orders</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#414846", "on-tertiary-container": "#999e9b", "on-primary-fixed": "#00201a", "background": "#f5fbf7", "secondary-fixed-dim": "#e5c284", "secondary-fixed": "#ffdea7", "on-error-container": "#93000a", "on-secondary-container": "#775d29", "outline-variant": "#c0c8c4", "error-container": "#ffdad6", "tertiary": "#1b211e", "on-primary-container": "#7da599", "error": "#ba1a1a", "inverse-surface": "#2c3230", "primary": "#00251d", "primary-container": "#123b32", "on-primary-fixed-variant": "#264e44", "on-surface": "#171d1b", "on-primary": "#ffffff", "tertiary-container": "#303633", "inverse-on-surface": "#ecf2ef", "tertiary-fixed": "#dfe4e0", "outline": "#717975", "on-secondary-fixed": "#271900", "surface-container": "#e9efec", "surface-bright": "#f5fbf7", "surface-dim": "#d5dbd8", "on-secondary": "#ffffff", "surface-container-low": "#eff5f1", "surface-container-highest": "#dee4e0", "surface-tint": "#3f665b", "primary-fixed": "#c1ecde", "on-tertiary-fixed-variant": "#424845", "surface-container-high": "#e4e9e6", "secondary-container": "#fdd898", "surface": "#f5fbf7", "inverse-primary": "#a5cfc2", "on-tertiary-fixed": "#171d1b", "primary-fixed-dim": "#a5cfc2", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "secondary": "#755a26", "tertiary-fixed-dim": "#c2c8c4", "on-secondary-fixed-variant": "#5b4311", "on-error": "#ffffff", "on-background": "#171d1b", "surface-variant": "#dee4e0" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-md": "0.75rem", "gutter": "1rem", "space-lg": "1rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "margin": "1rem" }, fontFamily: { "body-lg": ["Manrope"], "headline-sm": ["Epilogue"], "label-md": ["Manrope"], "body-md": ["Manrope"], "headline-md": ["Epilogue"], "headline-lg": ["Epilogue"], "numeric-metric": ["Manrope"], "body-sm": ["Manrope"], "label-sm": ["Manrope"], "display-lg": ["Epilogue"], "label-lg": ["Manrope"] }, fontSize: { "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }], "numeric-metric": ["20px", { lineHeight: "24px", letterSpacing: "-0.02em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "display-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #f5fbf7; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Back" class="w-11 h-11 -ml-1.5 flex items-center justify-center rounded-full text-on-surface hover:text-primary active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Apex Loom Official Logo" class="h-7 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1Vo0qxoDtgBYNE-a2SvltLuwRvQiL1D76n2aV7nGISHB0qQyKsa8hmYC3vq57Bszosjf9K92rCVLeRa5X1LaFsUuX_fuV68ujsC-wUgM1_r9-XaRFBO8MSvoL5uD2oERSoydxJ-1m1WH3mI5ZJq3FQdN0I2dpyKgGh02VSFNuU-kXT7_62jZd97fQJk7Z55plrebifcoORXZaboIU79mKuBcuVEhRkMTm2L9tme2A"/><h1 class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">Body Measurements Entry</h1></div><div class="flex items-center gap-space-xs shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFd3zrGrw6c5ucEC5ikowAXtQX9OtT8v__y0GJwT-oj66awVQuRQd5xaz9d3odXu2Eygwtlx15CKTALHeRUoeBHwPaTnJMim945qKAscjQdoX7jDqh0J2Qn6o4JRqpJr1f6kKjHRL1WJCdf8Y4GdpLP_cYgpzvDlXGvD6BZ1OcZOoIM4jf8bfrE0LpqiahaUrpGcdbCKKDWz9a2d9dWvR9A3XnSUWLUYMuzvskgw"/></div></div></header><main class="flex-1 w-full bg-background pt-16 pb-safe"><div class="flex flex-col w-full px-margin pb-8 space-y-space-lg">
+<!-- Garment Selection & Step Tracker -->
+<div class="flex flex-col space-y-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">straighten</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Apex Loom Fit Protocol</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 bg-surface-container rounded-full shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Senator 2-Piece</span>
+</div>
+</div>
+<!-- Step Progress Bar -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-baseline">
+<span class="font-headline-sm text-headline-sm text-primary">Upper Body &amp; Armhole</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 3 of 6</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-container rounded-full transition-all duration-500 ease-out" style="width: 50%;"></div>
+</div>
+</div>
+</div>
+<!-- Atelier Unit Toggle & Verification Status Card -->
+<div class="flex flex-col gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center justify-between">
+<!-- Unit Segmented Switch -->
+<div class="inline-flex p-0.5 bg-surface-container rounded-full" id="unit-toggle-group">
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all duration-200" id="btn-unit-in" onclick="switchUnit('in')">
+          Inches (in)
+        </button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant transition-all duration-200" id="btn-unit-cm" onclick="switchUnit('cm')">
+          Centimeters (cm)
+        </button>
+</div>
+<!-- Live Confidence Metric -->
+<div class="flex items-center gap-1 px-2.5 py-1 bg-surface-container-low rounded-lg text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+<span class="font-label-sm text-label-sm font-semibold">±0.25 in margin</span>
+</div>
+</div>
+<!-- Trust Indicator Pill -->
+<div class="flex items-center gap-2 pt-1 border-t-0">
+<div class="w-2 h-2 rounded-full bg-surface-tint animate-pulse"></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Calibrated to <span class="font-label-sm text-on-surface font-semibold">Master Tailor Haruna's</span> Lagos Pattern Block
+      </p>
+</div>
+</div>
+<!-- Anatomical Visual Guide Card -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<div class="relative w-full h-44 bg-surface-container-low overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="High contrast editorial photograph of a bespoke African fashion mannequin in Lagos atelier with soft lighting, wrapped with gold tape measure around upper chest and armhole, crisp linen texture, minimalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDECRaUW5ZepOopwNS_cig5nkhgotsCZlFRd2Fqf7LpBTlQET0PJmgfZdH5ZxyzwumVZgixtDyKkD6I_QfJhDkuNwJNULJVnK8sB0Mw1Dl76MKhOHmawUvE7jjVx3wq3JK6NPtB6OvSic2QeveTiqCD_fqsDxZiMULbj_tru9S2f1XeTrkDA6GouxNoQjr97CbpdZI4mMvwt4ih5qSMakiV0Q9RnZSpxZslMEgb0A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+<!-- Real-time Anatomical Callout Badge -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary flex items-center justify-center text-on-surface shadow-md">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+</div>
+<div>
+<h2 class="font-label-lg text-label-lg font-semibold tracking-tight">Armhole (Ramin Hannu) &amp; Chest</h2>
+<p class="font-label-sm text-label-sm opacity-90">Anatomical Datum 03</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest/20 backdrop-blur-md">Live Guide</span>
+</div>
+</div>
+<div class="p-space-md space-y-space-sm">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">info</span>
+<p class="font-body-md text-body-md text-on-surface">
+          Keep tape level across shoulder blades, strictly under armpits, and over the fullest part of the chest. Maintain relaxed drape.
+        </p>
+</div>
+<!-- Tailor Caution Box -->
+<div class="flex items-center gap-2.5 p-space-sm bg-secondary-container/40 rounded-lg text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px] shrink-0 text-secondary" style="font-variation-settings: 'FILL' 1;">warning</span>
+<p class="font-label-sm text-label-sm">
+<strong>Caution:</strong> Avoid puffing chest or flexing lats. Maintain an upright, natural salon posture.
+        </p>
+</div>
+</div>
+</div>
+<!-- Anatomical Metrics Grid -->
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Metrics Entry</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span> Bespoke Ease Applied
+      </span>
+</div>
+<!-- Stepper Fields -->
+<div class="space-y-space-sm">
+<!-- Chest / Kirji -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Chest Circumference</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-1.5">(Kirji)</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium bg-primary-fixed px-2 py-0.5 rounded">+3.5 in ease</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-numeric-metric text-numeric-metric text-primary" id="val-chest">42.0</span>
+<span class="unit-label font-body-sm text-body-sm text-on-surface-variant">in</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button aria-label="Decrease chest" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface" onclick="adjustVal('val-chest', -0.25)">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<button aria-label="Increase chest" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface" onclick="adjustVal('val-chest', 0.25)">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Shoulder Width / Saukar Kafada -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Shoulder Width</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-1.5">(Saukar Kafada)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bone-to-bone</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-numeric-metric text-numeric-metric text-primary" id="val-shoulder">18.5</span>
+<span class="unit-label font-body-sm text-body-sm text-on-surface-variant">in</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button aria-label="Decrease shoulder width" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface" onclick="adjustVal('val-shoulder', -0.25)">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<button aria-label="Increase shoulder width" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface" onclick="adjustVal('val-shoulder', 0.25)">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Neck / Collar / Wuya -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Neck / Mandarin Collar</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-1.5">(Wuya)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Standard 2-finger fit</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-numeric-metric text-numeric-metric text-primary" id="val-neck">16.5</span>
+<span class="unit-label font-body-sm text-body-sm text-on-surface-variant">in</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button aria-label="Decrease collar" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface" onclick="adjustVal('val-neck', -0.25)">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<button aria-label="Increase collar" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface" onclick="adjustVal('val-neck', 0.25)">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Armhole Depth -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Armhole Depth</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-1.5">(Ramin Hannu)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Critical Drapery</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-numeric-metric text-numeric-metric text-primary" id="val-armhole">10.25</span>
+<span class="unit-label font-body-sm text-body-sm text-on-surface-variant">in</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button aria-label="Decrease armhole" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface" onclick="adjustVal('val-armhole', -0.25)">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<button aria-label="Increase armhole" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface" onclick="adjustVal('val-armhole', 0.25)">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Sleeve Length / Hannu -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Sleeve Length</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-1.5">(Hannu)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">To wrist bone</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-numeric-metric text-numeric-metric text-primary" id="val-sleeve">25.5</span>
+<span class="unit-label font-body-sm text-body-sm text-on-surface-variant">in</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button aria-label="Decrease sleeve" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface" onclick="adjustVal('val-sleeve', -0.25)">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<button aria-label="Increase sleeve" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface" onclick="adjustVal('val-sleeve', 0.25)">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tunic Length / Tsawon Riga -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Senator Tunic Length</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-1.5">(Tsawon Riga)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mid-thigh classic</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-numeric-metric text-numeric-metric text-primary" id="val-tunic">39.0</span>
+<span class="unit-label font-body-sm text-body-sm text-on-surface-variant">in</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button aria-label="Decrease tunic length" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface" onclick="adjustVal('val-tunic', -0.25)">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<button aria-label="Increase tunic length" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface" onclick="adjustVal('val-tunic', 0.25)">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- AI Consistency & Sartorial Proportion Check Engine -->
+<div class="p-space-md bg-surface-container rounded-xl shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-lg text-label-lg text-primary font-semibold">Proportion Engine</span>
+</div>
+<span class="px-2 py-0.5 bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm rounded-full font-medium">99.4% Congruent</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Sartorial Ratio Check: Chest/Shoulder balance confirmed at <strong class="text-on-surface">2.27x</strong>. Optimal for fluid Lagos Senator front-bib hang without crease tension.
+    </p>
+<!-- Visual Proportion Bar -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Fitted</span>
+<span class="text-secondary font-semibold">Atelier Golden Mean</span>
+<span>Relaxed</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full relative overflow-hidden">
+<div class="absolute left-1/4 right-1/4 h-full bg-secondary-fixed-dim/40"></div>
+<div class="w-3 h-full bg-primary rounded-full absolute left-[56%] -translate-x-1/2 shadow-sm"></div>
+</div>
+</div>
+</div>
+<!-- Atelier Artisan Showcase -->
+<div class="flex items-center gap-3 p-space-sm bg-surface-container-lowest rounded-xl shadow-sm">
+<img class="w-12 h-12 rounded-lg object-cover" data-alt="Close up photograph of artisan hands holding tailor chalk marking dark green luxury cashmere wool cloth in tailoring workshop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2LAVn-TAjLEhp2NjKjqEfghy0scEHAJi3--WLV6SBxmDvc59jRudnheFtx9ehFnhjqN3E3HAgzB4KWI04up9TuFkwJziuPXVT-7gwvt324aNzCL1mIs1EYootUFNxMCuuiq-Tb1X7WlxBeirs-oFpJnnYQ_09ZKzhDeS5wqneQlVfXyFQVbpoWgsclEv60wX3UHSHYk3YnYNHwsByYGiGrU56ntRZMZtNN-F1tg"/>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-label-md text-on-surface truncate">Custom Monogram Ready</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Thread tone matching Emerald &amp; Gold</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+<!-- Bottom Action Dock (Sticky with Safe Area Insets) -->
+<div class="pt-space-sm pb-space-xs flex flex-col gap-space-sm">
+<button class="w-full h-[52px] bg-primary text-on-primary font-label-lg text-label-lg rounded-xl shadow-md flex items-center justify-center gap-2 hover:bg-primary-container active:scale-[0.98] transition-all" onclick="confirmProfile()" type="button">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+<span>Save &amp; Link to Order</span>
+</button>
+<button class="w-full h-[48px] bg-transparent text-primary hover:bg-surface-container font-label-md text-label-md rounded-xl flex items-center justify-center gap-2 active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Request Tailor In-Person Measurement</span>
+</button>
+</div>
+</div>
+<script>
+  let currentUnit = 'in';
+  const metricValues = {
+    'val-chest': 42.0,
+    'val-shoulder': 18.5,
+    'val-neck': 16.5,
+    'val-armhole': 10.25,
+    'val-sleeve': 25.5,
+    'val-tunic': 39.0
+  };
+
+  function switchUnit(unit) {
+    if (currentUnit === unit) return;
+    currentUnit = unit;
+
+    const btnIn = document.getElementById('btn-unit-in');
+    const btnCm = document.getElementById('btn-unit-cm');
+    const labels = document.querySelectorAll('.unit-label');
+
+    if (unit === 'cm') {
+      btnCm.className = 'px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all duration-200';
+      btnIn.className = 'px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant transition-all duration-200';
+      labels.forEach(l => l.innerText = 'cm');
+
+      for (let id in metricValues) {
+        const cmVal = (metricValues[id] * 2.54).toFixed(1);
+        document.getElementById(id).innerText = cmVal;
+      }
+    } else {
+      btnIn.className = 'px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all duration-200';
+      btnCm.className = 'px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant transition-all duration-200';
+      labels.forEach(l => l.innerText = 'in');
+
+      for (let id in metricValues) {
+        document.getElementById(id).innerText = metricValues[id].toFixed(2).replace(/\.00$/, '.0');
+      }
+    }
+  }
+
+  function adjustVal(id, delta) {
+    if (currentUnit === 'cm') {
+      delta = delta * 2.54;
+      const el = document.getElementById(id);
+      let curr = parseFloat(el.innerText) + delta;
+      if (curr < 5) curr = 5;
+      el.innerText = curr.toFixed(1);
+      metricValues[id] = curr / 2.54;
+    } else {
+      metricValues[id] = Math.max(2, metricValues[id] + delta);
+      document.getElementById(id).innerText = metricValues[id].toFixed(2).replace(/\.00$/, '.0');
+    }
+  }
+
+  function confirmProfile() {
+    const feedback = document.createElement('div');
+    feedback.className = 'fixed bottom-20 left-4 right-4 bg-primary text-on-primary p-3 rounded-xl shadow-xl flex items-center justify-between z-50 transition-all';
+    feedback.innerHTML = `
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-secondary">check_circle</span>
+        <span class="font-label-md text-label-md">Senator Profile Linked to Order #AL-984</span>
+      </div>
+      <span class="font-label-sm text-label-sm text-secondary">Saved</span>
+    `;
+    document.body.appendChild(feedback);
+    setTimeout(() => feedback.remove(), 2600);
+  }
+</script></main></body></html>
